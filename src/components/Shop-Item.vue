@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-  name: "Shop-Item",
+  name: "ShopItem",
   props: ["item"],
   data() {
     return {};

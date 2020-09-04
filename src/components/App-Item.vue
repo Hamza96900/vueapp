@@ -1,12 +1,8 @@
 <template>
   <div id="app">
     <section class="Header">
-      <h1 id="Fruiticious!">Fruiticious!</h1>
-      <!-- Cart component -->
-      <!-- <shop-cart :cart="this.cart" :total="this.total" @empty-cart="emptyCart"></shop-cart> -->
+      <h1 id="Fruiticious!">My Profile</h1>
     </section>
-    <!-- Item component -->
-    <shop-item @update-cart="updateCart"></shop-item>
   </div>
 </template>
 <script>
