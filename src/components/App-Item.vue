@@ -2,6 +2,7 @@
   <div id="app">
     <section class="Header">
       <h1 id="Fruiticious!">My Profile</h1>
+      <b-alert show> Hello g </b-alert>
     </section>
   </div>
 </template>
