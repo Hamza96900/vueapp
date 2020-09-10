@@ -2,17 +2,19 @@
   <div id="app">
     <div id="nav">
       <Header />
+      <router-view></router-view>
       <Footer />
     </div>
-    <router-view/>
   </div>
 </template>
 <script>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 export default {
+  components:{
   Header,
   Footer
+  }
 }
 </script>
 
@@ -31,10 +33,10 @@ export default {
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: White;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+nav a:hover{
+  color: greenyellow;
 }
 </style>

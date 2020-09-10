@@ -56,7 +56,7 @@ ul li {
   text-decoration: none;
 }
 
-#nav a.active {
+/* #nav a.active {
   color: #42b983;
-}
+} */
 </style>
