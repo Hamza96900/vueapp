@@ -8,8 +8,8 @@
     <div @click="navigate(slide.link)"
       @pointerdown="handleDown"
       @pointerup="handleUp"
-      @pointercancel="handleUp" v-for="(slide , index) in slides" :key= index>
-     <p>{{slide.number}}</p>
+      @pointercancel="handleUp" v-for="(slide , index) in slides" :key= index class="slides">
+     <img :src="require(`@/${slide.image}`)" />
     </div>
     </VueSlickCarousel>
   </div>
@@ -33,15 +33,18 @@ export default {
       slides: [
   {
     number: 1,
-    link: "/about"
+    link: "tiles247.co.uk",
+    image: "assets/slide1.jpg"
   },
   {
    number: 2,
-    link: "/home"
+    link: "/tilemountain.co.uk",
+    image: "assets/slide2.jpg"
   },
   {
     number: 3,
     link: "/pages", 
+    image: "assets/slide3.jpg"
   }
 ]
     }
@@ -52,7 +55,8 @@ export default {
       if (!this.drag) {
         console.log("justATest for Click");
         this.click = !this.click;
-        this.$router.push(buttonLink);
+        // this.$router.push(buttonLink);
+        window.open('https://'+buttonLink, '_blank');
       }
     },
     handleMove() {
@@ -75,3 +79,8 @@ export default {
   // },
 };
 </script>
+<style scoped>
+.slides{
+  cursor: pointer;
+}
+</style>
