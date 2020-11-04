@@ -45,10 +45,11 @@ ul li {
   padding: 10px;
   background-color: #141146;
   color: white;
+  font-family: Sarala;
 }
-#nav {
+/* #nav {
   padding: 30px;
-}
+} */
 
 #nav a {
   font-weight: bold;
