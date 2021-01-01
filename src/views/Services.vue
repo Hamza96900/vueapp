@@ -17,6 +17,18 @@ export default {
     return{
       show: true
     }
+  },
+  methods:{
+    call2(){
+      let a = 1;
+      var b = 2;
+      console.log("tajvez a",a, "hamza b" , b)
+    }
+
+  },
+  mounted (){
+    this.call2();
+    
   }
 }
 </script>
